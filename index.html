@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Per Te</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    .gallery {
+      width: 100%;
+      max-width: 500px; /* Perfetto per schermi mobile */
+    }
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 15px;
+      border-radius: 0; /* Cambia in 10px se vuoi gli angoli arrotondati */
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    }
+    /* Effetto caricamento fluido */
+    img {
+      animation: fadeIn 1.5s;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gallery">
+    <img src="foto1.jpg" alt="Momento 1">
+    <img src="foto2.jpg" alt="Momento 2">
+    <img src="foto3.jpg" alt="Momento 3">
+    </div>
+
+</body>
+</html>
