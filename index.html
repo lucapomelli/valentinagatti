@@ -3,46 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Per Te</title>
+  <title>Una sorpresa per te</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  
   <style>
+    :root {
+      /* QUI PUOI CAMBIARE IL COLORE SE NON TI PIACE */
+      --colore-cipria: #EACDC2; /* Un rosa cipria caldo ed elegante */
+      --colore-sfondo-card: #FFFBF9; /* Un bianco panna per le cornici */
+      --colore-testo: #5A4A42; /* Un marrone scuro caldo per il testo */
+    }
+
     body {
       margin: 0;
-      padding: 0;
-      background-color: #000;
+      padding: 20px 10px;
+      background-color: var(--colore-cipria);
+      font-family: 'Lato', sans-serif;
+      color: var(--colore-testo);
       display: flex;
       flex-direction: column;
       align-items: center;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      min-height: 100vh;
     }
-    .gallery {
-      width: 100%;
-      max-width: 500px; /* Perfetto per schermi mobile */
-    }
-    img {
-      width: 100%;
-      height: auto;
-      display: block;
-      margin-bottom: 15px;
-      border-radius: 0; /* Cambia in 10px se vuoi gli angoli arrotondati */
-      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-    }
-    /* Effetto caricamento fluido */
-    img {
-      animation: fadeIn 1.5s;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-  </style>
-</head>
-<body>
 
-  <div class="gallery">
-    <img src="foto1.jpg" alt="Momento 1">
-    <img src="foto2.jpg" alt="Momento 2">
-    <img src="foto3.jpg" alt="Momento 3">
-    </div>
+    /* Il contenitore principale della galleria */
+    .container {
+      width: 100%;
+      max-width: 450px; /* Perfetto per i telefoni */
+      text-align: center;
+    }
 
-</body>
-</html>
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 2.2
